@@ -9,7 +9,7 @@ const { join, parse, extname } = require("path");
 
 const filesDoesNotWillBeReplaced = ['make-single-files-in-dir.js', 'package.json', 'README.md'];
 
-(async () => {
+ (() => {
   const EXTNAME = process.argv[2];
   const WHERE_TO_RUN_SCRIPT = process.argv[3] ? process.argv[3] : "./";
 
